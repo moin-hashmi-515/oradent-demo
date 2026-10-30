@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OraDent CMS — Admin (Demo)</title>
+<style>body{font-family:system-ui,Arial,sans-serif;margin:0;color:#222}header{background:#0f4d3a;color:#fff;padding:16px}.wrap{max-width:900px;margin:0 auto;padding:16px}.card{border:1px solid #ddd;border-radius:12px;padding:16px;margin:12px 0}.note{background:#fff3cd;padding:12px;border-radius:10px}</style></head>
+<body><header><div class="wrap">ORADENT — Clinic CMS <span style="color:#ccc">(Demo)</span></div></header>
+<div class="wrap"><div class="note"><b>Demo CMS only:</b> front-end demo, data in this browser (od_* keys). No real server, login, payment or notification. Do NOT enter real patient data. Production needs a backend/WordPress build.</div>
+<div class="card"><h2>Appointments (from the demo form)</h2><div id="appts"></div></div>
+<div class="card"><h2>Doctors (as named on oladoc)</h2><p>Assoc. Prof. Dr. Asim Riaz · Dr. Sana Naeem · Dr. Aseef Sabir Ali Shah · Dr. Hurria Shafi · Dr. Umer Farooq — none described as owner on that listing.</p></div>
+<div class="card"><h2>Before launch — must confirm with the clinic</h2><ul><li>Hours: Mon–Sat 3 PM–9 PM vs "open 24/7, consultation times vary" — which is correct?</li><li>WhatsApp: does any clinic mobile support WhatsApp? None verified.</li><li>Email: none shown on oladoc.</li><li>Which 2 of the 5 doctors are not bookable on oladoc (page does not name them)?</li><li>Direct appointment fees (oladoc fees are platform fees, not to be copied as clinic fees).</li></ul></div>
+<p><a href="index.html">← Back to demo site</a></p></div>
+<script>try{var a=JSON.parse(localStorage.getItem('od_appointments')||'[]');document.getElementById('appts').innerHTML=a.length?a.map(function(x){return '<p><b>'+x.name+'</b> · '+x.phone+' · '+x.doctor+' · '+x.treatment+' · '+x.date+' '+x.time+'</p>'}).join(''):'<p>No demo appointments yet.</p>'}catch(e){}</script></body></html>
